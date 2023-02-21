@@ -12,10 +12,12 @@ func main() {
 
 	a := 5
 	b := 3
+	fmt.Println("===", a)
 	fmt.Println( a & b ) // and
 	fmt.Println( a | b ) // or
 	fmt.Println( a ^ b ) // xor - alt + 94
 	fmt.Println( a &^ b ) // and or - alt + 94
+	fmt.Println("===", b)
 
 	y := 5
 	fmt.Println( y << 4 ) // se añade 4 al exponente

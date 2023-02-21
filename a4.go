@@ -6,7 +6,7 @@ func main() {
     // calling the function
     // function returns two values which are
     // assigned to mul and blank identifier
-    mul, _ := mul_div(105, 7)
+    mul, _ := mul_div(100, 5)
  
     // only using the mul variable
     fmt.Println("Resultado de 105 x 7 = ", mul)

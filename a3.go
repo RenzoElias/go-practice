@@ -24,6 +24,9 @@ func main() {
 	// Defining t and u for Sub method
     t1 := time.Date(2022, 9, 21, 23, 00, 00, 00, time.UTC)
 	t2 := time.Now()
+
+	fmt.Println("t1", t1)
+	fmt.Println("t2", t2)
 	
 	// Calling Sub method
     subtract := t2.Sub(t1)

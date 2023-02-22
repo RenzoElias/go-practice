@@ -10,11 +10,11 @@ func main() {
 
 	fmt.Println("Square area: ", squareArea)
 
-	x:= 10
-	y:= 50
+	x := 10
+	y := 50
 
 	// Addition
-	result:= x + y
+	result := x + y
 	fmt.Println("Addition: ", result)
 
 	// Subtraction
@@ -40,4 +40,5 @@ func main() {
 	// Decrement
 	x--
 	fmt.Println("Decrement: ", x)
+
 }

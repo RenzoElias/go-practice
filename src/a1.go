@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// la funcion principal llamado main
+
+// declarando la funcion
 func main() {
 
 	// Nombres válidos
@@ -16,4 +19,5 @@ func main() {
 	fmt.Println("¿Cuál es tu edad? ")
 	fmt.Scanf("%d", &i)
 	fmt.Printf("Tienes %d años\n", i)
+
 }

@@ -6,14 +6,14 @@ import (
 	pk "github.com/RenzoElias/go-practice/src/mypackage"
 )
 
-// import "go-practice/src/mypackage"
-
 type pc struct {
 	ram   int
 	disk  int
 	brand string
 }
 
+// ======================>=============
+// PUNTEROS
 func (namePC pc) ping() {
 	fmt.Println(namePC.brand, "Pong")
 }
@@ -21,6 +21,12 @@ func (namePC pc) ping() {
 // *pc - Vamos acceder a los valores del struct mediante el puntero
 func (otherNamePC *pc) duplicateRAM() {
 	otherNamePC.ram = otherNamePC.ram * 2
+}
+
+// ======================>=============
+// STRINGERS
+func (mPC pc) String() string {
+	return fmt.Sprintf("Tengo %d GB Ram, %d GB Disco y es una %s", mPC.ram, mPC.disk, mPC.brand)
 }
 
 func main() {
@@ -40,7 +46,8 @@ func main() {
 	// Funciones, Slice, Maps
 	// pk.printMessage("Mundo")
 
-	// PUNTEROS ===================================
+	// ===================================
+	// PUNTEROS
 	a := 50
 	b := &a
 	// &a - acceso a la direccion de memoria (0x14000122020)
@@ -65,5 +72,11 @@ func main() {
 	myPC.duplicateRAM()
 
 	fmt.Println(myPC)
+
+	// ===================================
+	// STRINGERS
+	myPC1 := pc{ram: 16, brand: "msi", disk: 100}
+	// PARA EL STRUCT pc SERA PERSONALIZADO SU PRINT - POR EL METODO
+	fmt.Println(myPC1)
 
 }

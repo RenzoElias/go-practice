@@ -14,7 +14,7 @@ func say(text string, wg *sync.WaitGroup) { // Gorutine
 	fmt.Println(text)
 }
 
-func main() {
+func main27() {
 
 	var wg sync.WaitGroup // El paquete sync permite interacturar de forma primitiva con las gorutine. Variable que acomula un conjunto de gorutines y los va liberando poco a poco
 

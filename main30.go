@@ -13,5 +13,5 @@
 // lo que hice fue introducir este comando:
 // export GO111MODULE=on
 
-// y luego ya pude descargarlo con el mismo comando😎:
+// y luego ya pude descargarlo con el mismo comando:
 // go install -v golang.org/x/website/tour@latest

@@ -18,7 +18,7 @@ func main29() {
 	fmt.Println(len(c), cap(c))
 
 	// Range y close
-	close(c) // cerrar el canal - y a pesar que tuviera mas espacio para agregar ya no se podra porque esta cerrado
+	close(c) // cerrar el  - y a pesar que tuviera mas espacio para agregar ya no se podra porque esta cerrado
 	//c<-"Mensaje 3" // Dara error porque esta cerrado y tmb por que esta limitado a 2 entradas por el make
 
 	// Recorrido de los mensajes que estan dentro de ese channel (2 datos o goroutines dentro del channel)
